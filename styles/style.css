@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/*
+-----------
+  Colors
+-----------
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  background: none;
+}
+*:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-color: #202124;
+  font-family: sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  padding: 14px 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+header .github-link {
+  color: #ffffff;
+  border: 1px solid #303134;
+  border-radius: 4px;
+  background-color: #303134;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+header .github-link img {
+  height: 18px;
+}
+header .github-link:hover, header .github-link:focus-visible {
+  border-color: #5f6368;
+}
+header .right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+header .right .g-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 24px;
+}
+header .right .g-link:hover, header .right .g-link:focus-visible {
+  text-decoration: underline;
+}
+header .right .avatar-summary::marker {
+  content: "";
+}
+header .right .full-profile-img {
+  height: 350px;
+  aspect-ratio: 1/1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0vh 0vh 60px 22vh rgba(96, 96, 96, 0.8), 0 0 5px 6px #0e0d0d;
+  border-radius: 100vh;
+}
+header .right .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 100vh;
+  padding: 6px;
+  cursor: pointer;
+}
+header .right .avatar:hover, header .right .avatar:focus-visible {
+  background-color: #2e2f33;
+}
+header .right .avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  gap: 24px;
+}
+.main .google-logo {
+  width: 272px;
+  height: 92px;
+  margin: 0 auto;
+}
+.main .search-buttons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.main .search-buttons .search-button {
+  color: #e8eaed;
+  background-color: #303134;
+  border-radius: 4px;
+  padding: 8px 20px;
+  border: 1px solid #303134;
+}
+.main .search-buttons .search-button:hover, .main .search-buttons .search-button:focus-visible {
+  border-color: #5f6368;
+}
+.main .other-languages {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 13px;
+  line-height: 28px;
+}
+.main .other-languages p {
+  color: #bdc1c6;
+}
+.main .other-languages a {
+  color: #8ab4f8;
+}
+.main .other-languages a:hover, .main .other-languages a:focus-visible {
+  text-decoration: underline;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border-radius: 100vh;
+  background-color: #202124;
+  border: 1px solid #5f6368;
+  padding: 10px 17px;
+  max-width: 584px;
+  width: 100%;
+  cursor: pointer;
+}
+.search-bar .search-icon {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+.search-bar #search-bar {
+  font-size: 16px;
+  height: 30px;
+  flex: 100%;
+  background-color: transparent;
+  color: #e8eaed;
+  word-wrap: break-word;
+  -webkit-tap-highlight-color: transparent;
+}
+.search-bar .icon-button {
+  margin-left: 24px;
+}
+.search-bar .icon-button img {
+  height: 22px;
+}
+.search-bar:hover, .search-bar:focus-visible {
+  background-color: #303134;
+  box-shadow: 0 1px 6px 0 #171717;
+  border-color: rgba(223, 225, 229, 0);
+}
+
+footer {
+  background-color: #171717;
+  color: #999da2;
+  font-size: 16px;
+  padding: 16px 30px;
+  padding-bottom: 6px;
+  border-top: 1px solid #3c4043;
+  text-align: center;
+}
+footer .made-by {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+footer .made-by::marker {
+  content: "🤍 ";
+}/*# sourceMappingURL=style.css.map */
